@@ -7,6 +7,12 @@ class TextColor extends React.Component{
             colorValue:'blue'
         }
     }
+    componentDidMount(){
+        console.log("componentDidMOunt")
+    }
+    componentDidUpdate(){
+        console.log("componentDidUpdate")
+    }
    handleColor = (event) => {
        console.log("event.target", event.target);
     this.setState({colorValue:`${event.target.value}`})
